@@ -1,0 +1,31 @@
+[loglevel]
+loglevel = "info"
+
+[iout]
+file = "bm.log"
+port = "COM4"
+#port = "/dev/ttyUSB1"
+br = 115200
+#br = "115200"
+os = "rpi"
+delay = 0
+timeout = 10
+
+[t0]
+marker     = "Booting Linux"
+
+[t1]
+marker     = "raspberrypi login:"
+
+[t2]
+marker     = "Password"
+
+[login]
+login     = "login"
+#user      = "pi\n"
+user      = "pi\r\n"
+#user      = "root"
+
+pswd  = "Password"
+password  = "raspberry\r\n"
+#password  = "\n"
